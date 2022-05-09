@@ -52,7 +52,7 @@ void MainWindow_2::on_pushButton_3_clicked()
         QString file = dir.absoluteFilePath("C:/Program Files/Git/git-bash.exe");
         process->start(file);
 
-        Sleep(3000);
+        Sleep(5000);
         QMessageBox::information(this,"Upload progress","Done!");
 
     }
