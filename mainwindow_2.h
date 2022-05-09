@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <iostream>
 #include <stdlib.h>
+#include <windows.h>
 
 namespace Ui {
 class MainWindow_2;
