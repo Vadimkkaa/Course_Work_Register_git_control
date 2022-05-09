@@ -2,6 +2,7 @@
 #define MAINWINDOW_2_H
 
 #include <QMainWindow>
+#include <iostream>
 
 namespace Ui {
 class MainWindow_2;
@@ -19,6 +20,8 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_4_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::MainWindow_2 *ui;
