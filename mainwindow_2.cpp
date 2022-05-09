@@ -23,10 +23,9 @@ MainWindow_2::~MainWindow_2()
 void MainWindow_2::on_pushButton_clicked()
 {
     QProcess *process = new QProcess(this);
-    QString file = QDir::homePath() + "/register_prog/Procmon.exe";
-   //  QString file = QDir("C:/Users/USER/QT-projects/Register_Course_Work/register_prog/Procmon.exe");
+    QString file = QDir::homePath() + "/QT-projects/Register_Course_Work/register_prog/Procmon.exe";
     process->start(file);
-   //C:\Users\USER\QT-projects\Register_Course_Work\register_prog
+
 }
 
 
