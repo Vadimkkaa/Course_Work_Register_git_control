@@ -45,6 +45,17 @@ void MainWindow_2::on_pushButton_3_clicked()
    QMessageBox::StandardButton reply= QMessageBox::information(this, "Upload to GitHub", "Note: 'Upload to GitHub' uploads the latest log from register editor by overwriting the existing one\n\n If you want to proceed please click 'OK' otherwise there won't be any uploading done",QMessageBox::Yes | QMessageBox::No);
 
     if(reply== QMessageBox::Yes){
+
+        QProcess *process = new QProcess(this);
+
+        QDir dir(QCoreApplication::applicationDirPath());
+        QString file = dir.absoluteFilePath("C:/Program Files/Git/git-bash.exe");
+
+       // QString file = QDir::homePath() + "/QT-projects/Register_Course_Work/register_prog/Procmon.exe";
+        //QString file_ = QDir::filePath ("C:/Program Files/Git/git-bash.exe");
+
+        process->start(file);
+
         std::cout<<"Yes pushed";
 
     }else {
