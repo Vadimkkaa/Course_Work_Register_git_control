@@ -50,16 +50,10 @@ void MainWindow_2::on_pushButton_3_clicked()
 
         QDir dir(QCoreApplication::applicationDirPath());
         QString file = dir.absoluteFilePath("C:/Program Files/Git/git-bash.exe");
-
-       // QString file = QDir::homePath() + "/QT-projects/Register_Course_Work/register_prog/Procmon.exe";
-        //QString file_ = QDir::filePath ("C:/Program Files/Git/git-bash.exe");
-
         process->start(file);
 
-        std::cout<<"Yes pushed";
+        QMessageBox::information(this,"Upload progress","Done!");
 
-    }else {
-        std::cout<<"No pushed";
     }
 }
 
