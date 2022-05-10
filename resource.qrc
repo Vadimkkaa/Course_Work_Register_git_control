@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/resource">
         <file>img/8446880939_d85eafd8e8_b.jpg</file>
+        <file>img/images.jpg</file>
+        <file>img/product_large_FATBOY_Velvet_Darkblue_Close-up_01.jpg</file>
+        <file>img/texture-surface-dark-blue-11570456514lgg3xugs36.jpg</file>
+        <file>img/photo_2022-05-10_02-52-54.jpg</file>
+        <file>img/photo_2022-05-10_02-52-56.jpg</file>
+        <file>img/kX6dL.png</file>
     </qresource>
 </RCC>
