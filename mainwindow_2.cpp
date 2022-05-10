@@ -42,7 +42,7 @@ void MainWindow_2::on_pushButton_4_clicked()
 void MainWindow_2::on_pushButton_3_clicked()
 {
 
-   QMessageBox::StandardButton reply= QMessageBox::information(this, "Upload to GitHub", "Note: 'Upload to GitHub' uploads the latest log from register editor by overwriting the existing one\n\n If you want to proceed please click 'OK' otherwise there won't be any uploading done",QMessageBox::Yes | QMessageBox::No);
+   QMessageBox::StandardButton reply= QMessageBox::information(this, "Upload to GitHub", "Note: 'Upload to GitHub' uploads the latest log from register editor by overwriting the existing one\n\n If you want to proceed please click 'Yes' otherwise there won't be any uploading done",QMessageBox::Yes | QMessageBox::No);
 
     if(reply== QMessageBox::Yes){
 
