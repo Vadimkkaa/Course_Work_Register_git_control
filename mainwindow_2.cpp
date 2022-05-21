@@ -53,7 +53,7 @@ void MainWindow_2::on_pushButton_3_clicked()
         process->start(file);
 
         Sleep(4000);
-        QMessageBox::information(this,"Upload progress","Done!");
+        QMessageBox::information(this,"Uploading progress","Done!");
 
     }
 }
