@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "mainwindow_2.h"
+#include <QFontDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,6 +20,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;

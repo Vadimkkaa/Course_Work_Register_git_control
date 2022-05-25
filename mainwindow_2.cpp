@@ -32,7 +32,7 @@ void MainWindow_2::on_pushButton_clicked()
 
 void MainWindow_2::on_pushButton_4_clicked()
 {
-    QMessageBox::information(this, "User Manual", " 1.To view register, please push the 'Register Editor' button\n\n 2.To upload the register to GitHub, please push the 'Upload to GitHub' button\n\n 3.If you want to exit the program push the 'Exit' button\n\n Note: In order to upload to GitHub you need to save data from the register editor. To do that you have to click purple icon(looks like floppy disk) and click 'Ok' and after that click 'Yes'\n \t\t\t    Have fun ;) ");
+    QMessageBox::information(this,tr("User Manual"),tr(" 1.To view register, please push the 'Register Editor' button\n\n 2.To upload the register to GitHub, please push the 'Upload to GitHub' button\n\n 3.If you want to exit the program push the 'Exit' button\n\n Note: In order to upload to GitHub you need to save data from the register editor. To do that you have to click purple icon(looks like floppy disk) and click 'Ok' and after that click 'Yes'\n \t\t\t    Have fun ;) ") );
 }
 
 
@@ -42,7 +42,7 @@ void MainWindow_2::on_pushButton_4_clicked()
 void MainWindow_2::on_pushButton_3_clicked()
 {
 
-   QMessageBox::StandardButton reply= QMessageBox::information(this, "Upload to GitHub", "Note: 'Upload to GitHub' uploads the latest log from register editor by overwriting the existing one\n\n If you want to proceed please click 'Yes' otherwise there won't be any uploading done",QMessageBox::Yes | QMessageBox::No);
+   QMessageBox::StandardButton reply= QMessageBox::information(this,tr("Upload to GitHub"),tr("Note: 'Upload to GitHub' uploads the latest log from register editor by overwriting the existing one\n\n If you want to proceed please click 'Yes' otherwise there won't be any uploading done") ,QMessageBox::Yes | QMessageBox::No);
 
     if(reply== QMessageBox::Yes){
 
@@ -53,7 +53,7 @@ void MainWindow_2::on_pushButton_3_clicked()
         process->start(file);
 
         Sleep(4000);
-        QMessageBox::information(this,"Uploading progress","Done!");
+        QMessageBox::information(this,tr("Uploading progress"),tr("Done!"));
 
     }
 }
